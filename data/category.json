@@ -1,0 +1,34 @@
+[
+	{
+		"name": "Airport",
+		"image": "https://i.ibb.co/zHw1bM8/airport.png"
+	},
+	{
+		"name": "Taxi",
+		"image": "https://i.ibb.co/2N81HbW/Taxi.png"
+	},
+	{
+		"name": "Hotel",
+		"image": "https://i.ibb.co/F43WXPX/Hotel.png"
+	},
+	{
+		"name": "News",
+		"image": "https://i.ibb.co/wg2QYW0/News.png"
+	},
+	{
+		"name": "Guide",
+		"image": "https://i.ibb.co/fNVFwK5/guide.png"
+	},
+	{
+		"name": "Shopping",
+		"image": "https://i.ibb.co/m5Vtzkq/Shopping.png"
+	},
+	{
+		"name": "Ship",
+		"image": "https://i.ibb.co/r2ZCwDS/Ship.png"
+	},
+	{
+		"name": "Destination",
+		"image": "https://i.ibb.co/SPKQSNw/Destination.png"
+	}
+]
