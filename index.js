@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const PORT = process.env.PORT || 5000
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
 
 // middle were
@@ -49,6 +49,13 @@ async function run() {
             const query = {}
             const cursor = airportCollection.find(query).sort({ _id: -1 })
             const result = await cursor.limit(3).toArray()
+            res.send(result)
+        })
+
+        app.get('/airport/:id', async (req, res) => {
+            const id = req.params.id
+            const filter = { _id: new ObjectId(id) }
+            const result = await airportCollection.findOne(filter)
             res.send(result)
         })
 
