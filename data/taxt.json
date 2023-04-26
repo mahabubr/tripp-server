@@ -298,5 +298,50 @@
 				"phone": "111 222 333 444"
 			}
 		]
+	},
+	{
+		"category_id": "6446785e507cad34b556f1ce",
+		"image": "https://images.unsplash.com/photo-1516203495556-d1b91f84e200?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+		"root": "Karachi - Lagos",
+		"ratting": 4.5,
+		"rating-people": 35000,
+		"skill": 85000,
+		"driver": [
+			{
+				"name": "Jocelyn Hood",
+				"driver_image": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg",
+				"phone": "111 222 333 444"
+			}
+		]
+	},
+	{
+		"category_id": "6446785e507cad34b556f1ce",
+		"image": "https://images.unsplash.com/photo-1531124530521-938fb8be39d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80",
+		"root": "Buenos Aires - Manila",
+		"ratting": 1.2,
+		"rating-people": 12000,
+		"skill": 510000,
+		"driver": [
+			{
+				"name": "Erika Lee",
+				"driver_image": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg",
+				"phone": "111 222 333 444"
+			}
+		]
+	},
+	{
+		"category_id": "6446785e507cad34b556f1ce",
+		"image": "https://images.unsplash.com/photo-1482287068671-7fb7325e1a8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+		"root": "Rio De Janeiro - Bangalore",
+		"ratting": 4.4,
+		"rating-people": 25,
+		"skill": 52000,
+		"driver": [
+			{
+				"name": "Serenity Reyes",
+				"driver_image": "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg",
+				"phone": "111 222 333 444"
+			}
+		]
 	}
 ]

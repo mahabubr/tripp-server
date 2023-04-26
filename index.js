@@ -34,6 +34,7 @@ async function run() {
 
         const airportCollection = Database.collection('airport')
         const taxiCollection = Database.collection('taxi')
+        const hotelCollection = Database.collection('hotel')
 
         app.get('/category', async (req, res) => {
             const query = {}
@@ -82,6 +83,21 @@ async function run() {
             const id = req.params.id
             const filter = { _id: new ObjectId(id) }
             const result = await taxiCollection.findOne(filter)
+            res.send(result)
+        })
+
+        // HOTEL COLLECTION
+
+        app.get('/hotel', async (req, res) => {
+            const query = {}
+            const result = await hotelCollection.find(query).toArray()
+            res.send(result)
+        })
+
+        app.get('/hotel/:id', async (req, res) => {
+            const id = req.params.id
+            const filter = { _id: new ObjectId(id) }
+            const result = await hotelCollection.findOne(filter)
             res.send(result)
         })
 
