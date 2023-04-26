@@ -31,13 +31,17 @@ async function run() {
         const Database = client.db('tripp')
 
         const categoryCollection = Database.collection('category')
+
         const airportCollection = Database.collection('airport')
+        const taxiCollection = Database.collection('taxi')
 
         app.get('/category', async (req, res) => {
             const query = {}
             const result = await categoryCollection.find(query).toArray()
             res.send(result)
         })
+
+        // AIRPORT COLLECTION
 
         app.get('/airport', async (req, res) => {
             const query = {}
@@ -56,6 +60,28 @@ async function run() {
             const id = req.params.id
             const filter = { _id: new ObjectId(id) }
             const result = await airportCollection.findOne(filter)
+            res.send(result)
+        })
+
+        // TAXI COLLECTION
+
+        app.get('/taxi', async (req, res) => {
+            const query = {}
+            const result = await taxiCollection.find(query).toArray()
+            res.send(result)
+        })
+
+        app.get('/sort-taxi', async (req, res) => {
+            const query = {}
+            const cursor = taxiCollection.find(query).sort({ _id: -1 })
+            const result = await cursor.limit(4).toArray()
+            res.send(result)
+        })
+
+        app.get('/taxi/:id', async (req, res) => {
+            const id = req.params.id
+            const filter = { _id: new ObjectId(id) }
+            const result = await taxiCollection.findOne(filter)
             res.send(result)
         })
 
