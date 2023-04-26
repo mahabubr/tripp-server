@@ -94,6 +94,13 @@ async function run() {
             res.send(result)
         })
 
+        app.get('/sort-hotel', async (req, res) => {
+            const query = {}
+            const cursor = hotelCollection.find(query).sort({ _id: -1 })
+            const result = await cursor.limit(3).toArray()
+            res.send(result)
+        })
+
         app.get('/hotel/:id', async (req, res) => {
             const id = req.params.id
             const filter = { _id: new ObjectId(id) }
